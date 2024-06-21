@@ -43,6 +43,28 @@ saisieInt2Array();
    return 0;
 }
 
+// Définition des functions génériques de saisie
+// fonction saisieFloat demande un Float à l'utilisateur et retourne sa valeur
+double saisieFloat(){
+double r=0.0;
+printf("Entrer votre nombre decimal\n");
+scanf("%lf", &r);
+return r;
+}
+// fonction saisieInt demande un Entier à l'utilisateur et retourne sa valeur
+int saisieInt(){
+int r=0;
+printf("Entrer votre nombre entier\n");
+scanf("%d", &r);
+return r;
+}
+// fonction saisieChar demande une chaine de caractere à l'utilisateur et retourne sa valeur
+char saisieChar(){
+char r={"\0"};
+printf("Entrer votre mot\n");
+scanf("%s", &r);
+return r;
+}
 
 
 // IMPLEMENTATION DES FONCTIONS
