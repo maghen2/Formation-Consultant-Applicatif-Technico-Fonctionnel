@@ -113,4 +113,6 @@ select datediff(
         as rental_duration 
 from sakila.rental;
 
+
+
  
