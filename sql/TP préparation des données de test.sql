@@ -43,3 +43,27 @@ PK NN UQ BIN UN ZF AI G
 - UN: unsigned (for integer types, see docs: "10.2. Numeric Types")
 - ZF: zero fill (rather a display related flag, see docs: "10.2. Numeric Types")
 */
+
+
+date de naissance = email
+commission = extension
+
+/$HOME/Bureau/Merise SQL/SQL/Sample/create_databases_tables_correct.sql
+
+CREATE DATABASE `poei` CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+-- Configuration de mysql aprés installation
+CREATE USER 'maghen'@'localhost' IDENTIFIED BY '';
+GRANT ALL ON *.* TO 'maghen'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+QUIT;
+
+/*
+Création de la table
+*/
+CREATE TABLE IF NOT EXISTS `pays` (
+  `codePays` varchar(4) NOT NULL,
+  `monPays` varchar(40) NOT NULL,
+  PRIMARY KEY  (`codePays`)
+)
+;
