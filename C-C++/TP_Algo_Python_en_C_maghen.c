@@ -206,3 +206,23 @@ for(j=1;j<=nombreDeEntiers;j++) // pour faire l'operation N fois
 printf("TABLEAU DECROISSANT\n");
 tableauAfficher(tableau);
 }
+
+// 7.	Écrire un algorithme qui prend en entrée le résultat de l’exercice 6 et un autre nombre que fourni l’utilisateur. Celui-ci sélectionne tous les éléments qui sont dans la même dizaine que celui entrée par l’utilisateur en donnant aussi leur position dans le tableau.
+void tableauMemeDizaine(int choix, int tableau[MATRICE_TAB_SIZE][MATRICE_TAB_SIZE]){
+    int min = 0;
+    int max = 0;
+//while(1){
+    choix = saisieInt();
+    min = (choix/10)*10;
+    max = min + 10;
+
+    printf("STRUCRURE DU TABLEAU MATRICE %dx%d DES ELEMENTS ENTRE [%d, %d]\n", MATRICE_TAB_SIZE, MATRICE_TAB_SIZE, min, max);
+    for (int i = 0; i < MATRICE_TAB_SIZE; i++){
+        for(int j=0; j<MATRICE_TAB_SIZE; j++){
+            if(tableau[i][j]>=min && tableau[i][j]<max)
+            printf("tableau[%d][%d]=%d ", i,j, tableau[i][j]);
+        }
+    printf("\n");
+    }
+    printf("\n");
+}
