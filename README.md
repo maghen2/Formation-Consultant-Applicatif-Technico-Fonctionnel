@@ -10,3 +10,4 @@
 *	Missions technique et fonctionnelle (outils, langages, composants) de projets informatiques autour de l’intégration logiciels/matériels des systèmes d'information et de ses problématiques, enjeux et contraintes (IT, OS, base de données, etc)
 *	Compétence technique et fonctionnelle de la gestion de projets informatiques et de développement logiciel full stack dans un environnement international de travail en équipe nécessitant la maitrise de la relation client, la polyvalence et l'adaptabilité
 
+![ISTQB Certified Tester]("https://www.certible.com/static/img/istqb_logo_with_text.webp")
