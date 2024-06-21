@@ -3,7 +3,7 @@
 
 ## EXPÉRIENCE PROFESSIONNELLE
 ### 📅 Fév 2022   CONSULTANT IT, APPLICATIF ET TECHNICO-FONCTIONNEL 
-####📍 Paris, France	 Inetum Software
+-📍 Paris, France	 Inetum Software
 *	Collecte, analyse et traitement de l'expression des besoins client en vue de la rédaction des spécifications fonctionnelles et techniques détaillées et de paramétrage (générales, métiers, fonctionnelles, technique, etc)
 *	Fourniture du support utilisateur, diagnostique des incidents et accompagnement des clients dans leurs démarches d'évolution techniques et fonctionnelles à partir de procédures d'intégration logicielle des systèmes d’information
 *	MOA/MOE de projets d’intégration applicative avec maîtrise de langages de programmation informatique, des outils de développement de solutions informatiques et la mise en œuvre de systèmes de gestion sur site et en distanciel
