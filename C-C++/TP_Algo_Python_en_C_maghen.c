@@ -226,3 +226,32 @@ void tableauMemeDizaine(int choix, int tableau[MATRICE_TAB_SIZE][MATRICE_TAB_SIZ
     }
     printf("\n");
 }
+
+
+// 9.	Écrire un programme qui prend en entrée des nombres et retourne un tableau ordonné.  Exemple :  J’entre      1 4 2 7 12 4 9   Il retourne       	1 2 4 4 7 9 12
+int saisieInt2Array(){
+    int i=0;
+    int j = 0;
+
+    printf("Combien de nombres entiers naturels voulez-vous entrez (entre 0 et 100 nombres)\n");
+    nombreDeEntiers=saisieInt();
+    int tableauDeEntiers[nombreDeEntiers];
+    for(i=0; i<nombreDeEntiers; i++){
+        printf("%d/%d Entrer un nombre entier naturel compris entre 0 et 100, Exemple : 1 4 2 7 12 4 9 \n", i+1,nombreDeEntiers);
+        tableauDeEntiers[i]=saisieInt();
+    }
+    tableauAfficher(tableauDeEntiers);
+    tableauCroissant(tableauDeEntiers);
+    tableauIndex(tableauDeEntiers);
+
+
+    int tableau[MATRICE_TAB_SIZE][MATRICE_TAB_SIZE]={0};
+    tableauGenerateur(tableau);
+    printf("STRUCRURE DU TABLEAU MATRICE %dx%d\n", MATRICE_TAB_SIZE, MATRICE_TAB_SIZE);
+    for (int i = 0; i < MATRICE_TAB_SIZE; i++){
+        for(int j=0; j<MATRICE_TAB_SIZE; j++){
+            printf("tableau[%d][%d]=%d ", i,j, tableau[i][j]);
+        }
+    printf("\n");
+    }
+    printf("\n");
