@@ -58,3 +58,20 @@ FLUSH PRIVILEGES;
 QUIT;
 
 
+/*
+Création de la table
+*/
+CREATE TABLE IF NOT EXISTS `pays` (
+  `codePays` varchar(4) NOT NULL,
+  `monPays` varchar(40) NOT NULL,
+  PRIMARY KEY  (`codePays`)
+)
+;
+
+/*
+Modification de la table
+*/
+ALTER TABLE `pays` 
+ADD `courriel` varchar(60) NOT NULL,
+MODIFY `courriel` varchar(75), -- CHANGE
+DROP `courriel`;
