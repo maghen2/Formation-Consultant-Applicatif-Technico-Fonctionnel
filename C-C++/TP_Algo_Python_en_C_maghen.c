@@ -64,3 +64,15 @@ void tableauAfficher(int tableau[nombreDeEntiers]) {
     printf("\n");
 }
 
+// EXO:3) Afficher le plus petit element du tableau
+int tableauPlusPetitElt(int tableau[nombreDeEntiers]){
+    int min=tableau[0];
+    int index=-1;
+    for (int i = 0; i < nombreDeEntiers; i++) {
+        if(min>tableau[i]){
+          min=tableau[i];
+          index=i;
+        }
+    }
+    printf("Le plus petit element du tableau a pour valeur %d avec pour index %d\n", min,index);
+}
