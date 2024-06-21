@@ -82,4 +82,35 @@ use classicmodels;
 select customerName, country from customers where creditLimit between 50000 and 100000;
 select productName, productVendor, productLine, quantityInStock from products where productDescription like "%are%" order by productName;
 
+/*
+Scénario de test 4 : Consultation écran d’historique de location DVD
+Etant donné qu’un titre DVD a été loué plus de 0 fois
+Et que ce titre est disponible en plusieurs fois dans les inventaires des magasins
+Quand je me trouve sur la consultation de l’historique de location du DVD
+Alors je vois le nombre de locations achetées à ce jour pour ce titreEt ce nombre est consultable en détail pour chaque magasin
+*/
+
+USE sakila;
+SELECT film.title as film_title, inventory.store_id, count(*) as rent_num FROM film 
+inner join inventory on inventory.film_id = film.film_id
+inner join rental on rental.inventory_id = inventory.inventory_id 
+group by film.title, inventory.store_id
+order by film.title;
+
+
+select title, store_id, film.film_id, count(*)
+from sakila.inventory
+inner join sakila.film on sakila.inventory.film_id = sakila.film.film_id
+group by store_id, film_id
+having count(*) >= 4
+order by film_id, store_id;
+
+
+
+select datediff(
+          ifnull(return_date, NOW()), 
+          rental_date) 
+        as rental_duration 
+from sakila.rental;
+
  
