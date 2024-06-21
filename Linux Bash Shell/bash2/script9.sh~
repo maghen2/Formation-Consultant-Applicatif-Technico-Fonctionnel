@@ -1,0 +1,9 @@
+#$1 #file
+#$2 #col
+#$3 #head
+#head -n $3 $1
+#head -n $3 $1 | cut -f $2 -d ,
+head -n $3 $1 | awk -F"," {print $2 }
+#cat $1 | awk -F"," '{print $2 }' | head -$3
+#cat insurance.csv | awk -F"," '{print $1 }' | head -6
+#./script9.sh insurance.csv 3 12
