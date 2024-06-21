@@ -11,4 +11,4 @@
 *	Compétence technique et fonctionnelle de la gestion de projets informatiques et de développement logiciel full stack dans un environnement international de travail en équipe nécessitant la maitrise de la relation client, la polyvalence et l'adaptabilité
 
 ## ISTQB Certified Tester
-[![ISTQB Certified Tester](https://www.certible.com/static/img/ctfl.png)
+![ISTQB Certified Tester](https://www.certible.com/static/img/ctfl.png)
