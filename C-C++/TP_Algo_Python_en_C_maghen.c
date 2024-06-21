@@ -6,3 +6,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
+
+
+// definition de constantes
+#define MAX_TAB_SIZE 100
+#define MATRICE_TAB_SIZE 10
