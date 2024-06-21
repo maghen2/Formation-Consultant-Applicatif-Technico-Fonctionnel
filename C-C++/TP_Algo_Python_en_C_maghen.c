@@ -76,3 +76,16 @@ int tableauPlusPetitElt(int tableau[nombreDeEntiers]){
     }
     printf("Le plus petit element du tableau a pour valeur %d avec pour index %d\n", min,index);
 }
+
+// EXO:4) Afficher le plus grand element du tableau
+int tableauPlusGrandElt(int tableau[nombreDeEntiers]){
+    int max=tableau[0];
+    int index=-1;
+    for (int i = 0; i < nombreDeEntiers; i++) {
+        if(max<tableau[i]){
+          max=tableau[i];
+          index=i;
+        }
+    }
+    printf("Le plus grand element du tableau a pour valeur %d avec pour index %d\n", max,index);
+}
