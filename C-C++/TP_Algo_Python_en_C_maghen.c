@@ -127,3 +127,19 @@ if(tableau[moitieIndex]<=valeur){
         printf("La valeur %d n'existe pas dans le tableau\n", valeur);
     }
 }
+
+
+// EXO:6) Ecrire une fonction recherchant les valeurs du tableau divisibles par le nombre en parametre
+int tableauDivisible(int tableau[nombreDeEntiers]){
+     printf("Choisissez le nombre dont vous voulez rechercher les valeurs divisibles dans le tableau\n");
+     int diviseur=saisieInt();
+     int valeur=-1;
+     int index=-1;
+    for (int i = 0; i < nombreDeEntiers; i++){
+        if((tableau[i]%diviseur)==0){
+          valeur=tableau[i];
+          index=i;
+          printf("Le nombre %d est un diviseur de la valeur %d du tableau qui a pour index %d\n", diviseur,valeur,index);
+        }
+    }
+}
