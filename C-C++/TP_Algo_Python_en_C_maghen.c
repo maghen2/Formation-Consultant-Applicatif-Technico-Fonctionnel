@@ -53,3 +53,14 @@ void tableauGenerateur(int tableau[MATRICE_TAB_SIZE][MATRICE_TAB_SIZE]){
         }
     }
 }
+
+
+// EXO:2) Afficheur de tableau
+void tableauAfficher(int tableau[nombreDeEntiers]) {
+    printf("STRUCTURE DU TABLEAU\n");
+    for (int i = 0; i < nombreDeEntiers; i++) {
+        printf("[%d]=%d; ", i,tableau[i]);
+    }
+    printf("\n");
+}
+
