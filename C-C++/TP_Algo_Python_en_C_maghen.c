@@ -143,3 +143,18 @@ int tableauDivisible(int tableau[nombreDeEntiers]){
         }
     }
 }
+
+
+// EXO:7.1) Ecrire une fonction ordonne le tableau de facon croissante
+void tableauCroissant(int tableau[nombreDeEntiers]){
+int i,j,k;
+for(j=1;j<=nombreDeEntiers;j++) // pour faire l'operation N fois
+    for(i=0;i<nombreDeEntiers-1;i++)
+        if ( tableau[i] > tableau[i+1] ) {
+                k=tableau[i];
+                tableau[i]=tableau[i+1];
+                tableau[i+1]=k;
+        }
+printf("TABLEAU CROISSANT\n");
+tableauAfficher(tableau);
+}
