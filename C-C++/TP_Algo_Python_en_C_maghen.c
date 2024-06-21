@@ -36,7 +36,7 @@ int sainsiesaisieInt2Array();
 void tableauMemeDizaine(int choix, int tableau[MATRICE_TAB_SIZE][MATRICE_TAB_SIZE]);
 
 // Declarartion des variables globales
-int nombreDeEntiers=0;
+int nombreDeEntiers = 0;
 
 int main() {
 saisieInt2Array();
