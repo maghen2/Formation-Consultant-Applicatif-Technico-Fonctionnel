@@ -43,6 +43,8 @@ saisieInt2Array();
    return 0;
 }
 
+
+
 // IMPLEMENTATION DES FONCTIONS
 // EXO:1) Genrateur de tableau
 void tableauGenerateur(int tableau[MATRICE_TAB_SIZE][MATRICE_TAB_SIZE]){
@@ -156,5 +158,29 @@ for(j=1;j<=nombreDeEntiers;j++) // pour faire l'operation N fois
                 tableau[i+1]=k;
         }
 printf("TABLEAU CROISSANT\n");
+tableauAfficher(tableau);
+}
+
+
+// EXO:8) Ecrire une fonction de cumule la valeur avec celle de l'index suivant
+int tableauCumule(int tableau[nombreDeEntiers]){
+    for (int i = 1; i < nombreDeEntiers-1; i++)
+    tableau[i]+=tableau[i-1];
+    printf("TABLEAU CUMULE\n");
+    tableauAfficher(tableau);
+}
+
+// EXO:7.2) Ecrire une fonction ordonne le tableau de facon décroissante
+void tableauDecroissant(int tableau[nombreDeEntiers]){
+int i,j,k;
+
+for(j=1;j<=nombreDeEntiers;j++) // pour faire l'operation N fois
+    for(i=0;i<nombreDeEntiers-1;i++)
+        if ( tableau[i] < tableau[i+1] ) {
+                k=tableau[i];
+                tableau[i]=tableau[i+1];
+                tableau[i+1]=k;
+        }
+printf("TABLEAU DECROISSANT\n");
 tableauAfficher(tableau);
 }
