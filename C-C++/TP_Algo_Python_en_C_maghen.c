@@ -42,3 +42,14 @@ int main() {
 saisieInt2Array();
    return 0;
 }
+
+// IMPLEMENTATION DES FONCTIONS
+// EXO:1) Genrateur de tableau
+void tableauGenerateur(int tableau[MATRICE_TAB_SIZE][MATRICE_TAB_SIZE]){
+    srand(time( NULL ));
+    for (int i = 0; i < MATRICE_TAB_SIZE; i++){
+        for(int j=0; j<MATRICE_TAB_SIZE; j++){
+        tableau[i][j]=rand()%100;
+        }
+    }
+}
