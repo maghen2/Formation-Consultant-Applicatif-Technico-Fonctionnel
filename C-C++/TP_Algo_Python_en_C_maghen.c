@@ -255,3 +255,13 @@ int saisieInt2Array(){
     printf("\n");
     }
     printf("\n");
+
+
+// 10.	Écrire un algorithme qui prend en entrée le résultat de l’exercice 6 et un autre nombre que fourni l’utilisateur. Celui-ci sélectionne tous les éléments qui sont dans la même dizaine que celui entrée par l’utilisateur en donnant aussi leur position dans le tableau.
+    printf("Choisissez un nombre dont seront selectionne tous les elements qui sont dans la meme dizaine en donnant aussi leur position dans le tableau.\n");
+    int choix = saisieInt();
+    tableauMemeDizaine(choix, tableau);
+
+    printf("_ _\n_| _|\n|_ _|\n");
+
+}
