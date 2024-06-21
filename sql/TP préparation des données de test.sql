@@ -75,3 +75,11 @@ ALTER TABLE `pays`
 ADD `courriel` varchar(60) NOT NULL,
 MODIFY `courriel` varchar(75), -- CHANGE
 DROP `courriel`;
+
+
+-- TP 18/03/2022
+use classicmodels;
+select customerName, country from customers where creditLimit between 50000 and 100000;
+select productName, productVendor, productLine, quantityInStock from products where productDescription like "%are%" order by productName;
+
+ 
