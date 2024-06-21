@@ -89,3 +89,41 @@ int tableauPlusGrandElt(int tableau[nombreDeEntiers]){
     }
     printf("Le plus grand element du tableau a pour valeur %d avec pour index %d\n", max,index);
 }
+
+// EXO:5) Ecrire une fonction qui renvoit l'index dans le tableau du nombre passé en parametre
+void tableauIndex(int tableau[nombreDeEntiers]){
+    int index=-1;
+    int i = 0;
+    printf("Choisissez la valeur dont vous voulez rechercher l'index dans le tableau\n");
+    int valeur=saisieInt();
+
+    // afin d'aller plus vite l'on fait une dichotomie
+    int moitieIndex = 0;
+    if(nombreDeEntiers%2==0)
+        moitieIndex = nombreDeEntiers/2;
+    else
+       moitieIndex  = (nombreDeEntiers+1)/2;
+if(tableau[moitieIndex]<=valeur){
+    for (i = moitieIndex; i < nombreDeEntiers; i++){
+        if(valeur==tableau[i]){
+          index=i;
+          break;
+        }
+    }
+} else{
+    for (i = 0; i < moitieIndex; i++){
+        if(valeur==tableau[i]){
+          index=i;
+          break;
+        }
+    }
+
+}
+    if (index!=-1){
+
+        printf("La valeur %d du tableau a pour index %d\n", valeur,index);
+    } else{
+
+        printf("La valeur %d n'existe pas dans le tableau\n", valeur);
+    }
+}
