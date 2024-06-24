@@ -58,7 +58,7 @@ return 0;
 }
 
 /* implementation des fonctions */
-/* Variables et fonctions déjà définis dans main
+//Variables et fonctions déjà définis dans main
 // fonction saisieFloat demande un Float à l'utilisateur et retourne sa valeur
 double saisieFloat(){
 double r=0.0;
@@ -73,7 +73,7 @@ printf("Entrer votre nombre entier\n");
 scanf("%d", &r);
 return r;
 }
-*/
+
 // fonction doubleValeur retourne le double de la valeur
 void doubleValeur(){
 int a=saisieInt(); // Demande à l'utilisateur la saisie de la valeur
